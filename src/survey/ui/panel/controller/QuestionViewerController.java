@@ -14,6 +14,7 @@ import survey.data.SectionData;
 import survey.data.SectionObject;
 import survey.data.SectionVariable;
 import survey.data.result.ResultDataHandler;
+import survey.ui.controller.UIControllRoom;
 import survey.ui.panel.QuestionViewer;
 
 /**
@@ -27,10 +28,11 @@ public class QuestionViewerController {
     private int currentSector = 0;
     private int currentQuestion = 0;
 
-    private final String currentSection = SectionVariable.ENERGY;
+    public String currentSection = SectionVariable.ENERGY;
 
-    public QuestionViewerController(QuestionViewer mainPanel) {
+    public QuestionViewerController(QuestionViewer mainPanel, String currentSection) {
         this.mainPanel = mainPanel;
+        this.currentSection=currentSection;
         init();
     }
 
@@ -76,13 +78,19 @@ public class QuestionViewerController {
                 .setQuestion(currentQuestion - 1)
                 .setQuestionAnswer(answer);
         
-        ResultDataHandler.printConsumptionAnswer();
+        //ResultDataHandler.printConsumptionAnswer();
         
         Map<String, String> gottenData = loadNextQuestion();
         if (gottenData != null) {
             putItToView(gottenData);
         } else {
-            JOptionPane.showMessageDialog(mainPanel, "Yeah its ends");
+            atLast();
+        }
+    }
+    
+    private void atLast(){
+        if(currentSection==SectionVariable.ENERGY){
+            UIControllRoom.qC().loadWasteAmountPanel();
         }
     }
 

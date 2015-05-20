@@ -24,6 +24,9 @@ public class ResultDataHandler {
     public static double annualTotalUsageGas=0;
     public static Map<String,Double> electriciyPercentage=new HashMap<>();
     public static Map<String,Double> gasPercentage=new HashMap<>();
+    public static List<WasteAmountData> wasteAmount=new ArrayList<>();
+   
+    
     
     
     private static String qSection;
@@ -81,5 +84,11 @@ public class ResultDataHandler {
                 .subSection.get(qSector)
                 .questions.get(question)
                 .setQuAnswer(answer);
+    }
+    
+    public static void addWasteAmountEachRow(String wasteSector, double totalWasteAmount, double recyclingPercentage){
+        wasteAmount.add(new WasteAmountData(wasteSector, totalWasteAmount, recyclingPercentage));
+        
+        System.out.println(wasteAmount);
     }
 }

@@ -125,7 +125,7 @@ public class ConsumptionPanelController {
             mainPanel.errorLabel.setText("Natural Gas table's input total is equal to 100%. Please recheck.");
         } else {
             putAnswer();
-            UIControllRoom.qC().loadQuestionPanel();
+            UIControllRoom.qC().loadQuestionPanel(SectionVariable.ENERGY);
         }
     }
 

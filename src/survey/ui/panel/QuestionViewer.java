@@ -5,6 +5,7 @@
  */
 package survey.ui.panel;
 
+import survey.data.SectionVariable;
 import survey.ui.panel.controller.QuestionViewerController;
 
 /**
@@ -17,9 +18,9 @@ public class QuestionViewer extends javax.swing.JPanel {
      * Creates new form QuestionViewer
      */
     QuestionViewerController theController;
-    public QuestionViewer() {
+    public QuestionViewer(String section) {
         initComponents();
-        theController=new QuestionViewerController(this);
+        theController=new QuestionViewerController(this,section);
     }
 
     /**

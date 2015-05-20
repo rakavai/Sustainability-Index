@@ -54,8 +54,12 @@ public class QuestionerController {
         putContentInPanel(new ConsumptionPanel());
     }
     
-    public void loadQuestionPanel(){
-        putContentInPanel(new QuestionViewer());
+    public void loadQuestionPanel(String section){
+        putContentInPanel(new QuestionViewer(section));
+    }
+    
+    public void loadWasteAmountPanel(){
+        putContentInPanel(new WasteAmount());
     }
 
 }

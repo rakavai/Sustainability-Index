@@ -48,6 +48,9 @@ public class Questioner extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(22, 175, 191));
+        setMaximumSize(new java.awt.Dimension(830, 600));
+        setMinimumSize(new java.awt.Dimension(830, 600));
+        setPreferredSize(new java.awt.Dimension(830, 600));
         setResizable(false);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -92,6 +95,7 @@ public class Questioner extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**

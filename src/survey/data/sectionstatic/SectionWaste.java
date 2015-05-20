@@ -5,6 +5,8 @@
  */
 package survey.data.sectionstatic;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import survey.data.SectionObject;
 import survey.data.SectionVariable;
 
@@ -19,6 +21,15 @@ public class SectionWaste {
     static{
         waste.sectionName="Waste Management";
         waste.pairwiseComparisonName="Waste Management";
+        waste.sectionTitle="Waste Management Questionnaire";
         waste.sectionKey=SectionVariable.WASTE;
+        
+        String[] sectors={
+            "Electronic Waste",
+            "Glass Waste",
+            "Metal Cleaning Solvent"
+        };
+        
+        waste.subSectionHolder=new ArrayList<>(Arrays.asList(sectors));
     }
 }
