@@ -6,7 +6,10 @@
 package survey.data;
 
 import common.Pair;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -21,9 +24,10 @@ public class SectionObject {
     public String pairwiseComparisonName;
     public List<SectionObject> subSection;
     public List<QuestionsObject> questions;
-    public List<String> subSectionHolder;
+    public List<String> subSectionHolder=new ArrayList<>();
     public int pairComparisonCount;
-
+    public double constant;
+    public Map<String,Double> subSectionHolderWithConstant=new HashMap<>();
     public SectionObject() {
         this.pairComparisonCount = 0;
     }
@@ -33,6 +37,19 @@ public class SectionObject {
         this.sectionName = sectionName;
         this.sectionKey = sectionName;
         this.questions = questions;
+    }
+    
+    public SectionObject(String sectionName, List<QuestionsObject> questions, double constant) {
+        this.pairComparisonCount = 0;
+        this.sectionName = sectionName;
+        this.sectionKey = sectionName;
+        this.questions = questions;
+        this.constant=constant;
+    }
+    
+    public void subSectionHolder(String holderName, double constant){
+        subSectionHolder.add(holderName);
+        subSectionHolderWithConstant.put(holderName, constant);
     }
 
 }

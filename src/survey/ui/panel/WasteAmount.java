@@ -56,7 +56,14 @@ public class WasteAmount extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
+        wasteTable.setColumnSelectionAllowed(true);
+        wasteTable.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                wasteTableFocusLost(evt);
+            }
+        });
         jScrollPane1.setViewportView(wasteTable);
+        wasteTable.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
 
         jButton1.setText("OK");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -92,6 +99,11 @@ public class WasteAmount extends javax.swing.JPanel {
         // TODO add your handling code here:
         theControler.okayButtonClicked();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void wasteTableFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_wasteTableFocusLost
+        // TODO add your handling code here:
+        theControler.focusLost();
+    }//GEN-LAST:event_wasteTableFocusLost
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

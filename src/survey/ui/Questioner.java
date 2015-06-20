@@ -47,6 +47,7 @@ public class Questioner extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Survey of SI");
         setBackground(new java.awt.Color(22, 175, 191));
         setMaximumSize(new java.awt.Dimension(830, 600));
         setMinimumSize(new java.awt.Dimension(830, 600));
@@ -67,7 +68,7 @@ public class Questioner extends javax.swing.JFrame {
         topLabel.setBackground(new java.awt.Color(51, 153, 180));
         topLabel.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
         topLabel.setForeground(new java.awt.Color(254, 254, 254));
-        topLabel.setText("jLabel1");
+        topLabel.setText("Pariwise Comparison between sections");
         topLabel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         topLabel.setOpaque(true);
 

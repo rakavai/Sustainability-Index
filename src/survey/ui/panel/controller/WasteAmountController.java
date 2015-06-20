@@ -62,6 +62,11 @@ public class WasteAmountController {
     
     public void okayButtonClicked() {
         saveResult();
+        UIControllRoom.qC().loadQuestionPanel(SectionVariable.WASTE);
+    }
+
+    public void focusLost() {
+        mainPanel.wasteTable.editCellAt(0, 0);
     }
 
 }

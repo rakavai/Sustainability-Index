@@ -61,5 +61,21 @@ public class QuestionerController {
     public void loadWasteAmountPanel(){
         putContentInPanel(new WasteAmount());
     }
+    
+    public void loadPairWiseComparisionWHS(){
+        putContentInPanel(new PairWiseComparisonWHS());
+    }
+    
+    public void loadResultViewer(){
+        putContentInPanel(new ResultViewer());
+    }
+
+    public void loadCarbonFootPrintPanel() {
+        putContentInPanel(new CarbonFootPrintPanel());
+    }
+
+    public void loadSuggestion() {
+        putContentInPanel(new ShowSuggestion());
+    }
 
 }

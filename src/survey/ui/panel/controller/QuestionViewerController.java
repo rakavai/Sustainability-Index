@@ -92,6 +92,12 @@ public class QuestionViewerController {
         if(currentSection==SectionVariable.ENERGY){
             UIControllRoom.qC().loadWasteAmountPanel();
         }
+        else if(currentSection==SectionVariable.WASTE){
+            UIControllRoom.qC().loadPairWiseComparisionWHS();
+        }
+        else if(currentSection==SectionVariable.WHS){
+            UIControllRoom.qC().loadResultViewer();
+        }
     }
 
     public void yesButton() {

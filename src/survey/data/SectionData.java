@@ -24,4 +24,8 @@ public class SectionData {
     public static Map<String, SectionObject> getAllSection(){
         return allSection;
     }
+    
+    public static SectionObject sector(String key){
+        return allSection.get(key);
+    }
 }

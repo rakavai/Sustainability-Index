@@ -13,6 +13,7 @@ public class SectionVariable {
     public final static String ENERGY="Energy";
     public final static String WASTE="Waste";
     public final static String WHS="whs";
-    
+    public final static double ELECTRIICY_CONSTANT=2.19;
+    public final static double GAS_CONSTANT=139;
     
 }

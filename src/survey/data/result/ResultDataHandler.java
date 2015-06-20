@@ -25,7 +25,7 @@ public class ResultDataHandler {
     public static Map<String,Double> electriciyPercentage=new HashMap<>();
     public static Map<String,Double> gasPercentage=new HashMap<>();
     public static List<WasteAmountData> wasteAmount=new ArrayList<>();
-   
+    
     
     
     
@@ -38,6 +38,10 @@ public class ResultDataHandler {
     public static void incrementSectionComparison(String sectionsKey) {
         SectionObject currentObject=SectionData.allSection.get(sectionsKey);
         currentObject.pairComparisonCount++;
+    }
+    
+    public static void incrementSectionComparisonByRef(SectionObject sector){
+        sector.pairComparisonCount++;
     }
     public static void setEnergyProjectNo(int projectNo){
         projectNoForEnergy=projectNo;
@@ -88,7 +92,14 @@ public class ResultDataHandler {
     
     public static void addWasteAmountEachRow(String wasteSector, double totalWasteAmount, double recyclingPercentage){
         wasteAmount.add(new WasteAmountData(wasteSector, totalWasteAmount, recyclingPercentage));
+        printwasteAmount();
         
-        System.out.println(wasteAmount);
+        
+    }
+    
+    private static void printwasteAmount(){
+        for (WasteAmountData each : wasteAmount) {
+            System.out.println(each.wasteSector+": "+each.totalWasteAmount+", "+each.recyclingPercentage);
+        }
     }
 }

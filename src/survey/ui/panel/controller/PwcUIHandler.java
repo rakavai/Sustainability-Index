@@ -35,9 +35,14 @@ public class PwcUIHandler {
     private String nowOption2;
     public PwcUIHandler(PairwiseComparisionSection thePanel) {
         PWCpanel=thePanel;
-        formThePair();
+        formThePair();       
         setPairSection();
+       
     }   
+    
+    private void setLabel(){
+        UIControllRoom.setTextTopLabel("Pair Wise Conmparison");
+    }
     
     private void formThePair(){        
         for(Map.Entry<String,SectionObject> entry: SectionData.getAllSection().entrySet()){
@@ -70,6 +75,7 @@ public class PwcUIHandler {
         PWCpanel.compairOption2.setText(pairKeeper.get(now).getRight().pairwiseComparisonName);
         now++;
         PWCpanel.statusLabel.setText(now+"/"+max);
+        
         return true;
     }
     
@@ -85,6 +91,7 @@ public class PwcUIHandler {
     }
     
     public void nextClicked(){
+        
         if(PWCpanel.compairOption1.isSelected()){
             ResultDataHandler.incrementSectionComparison(nowOption1);
             
