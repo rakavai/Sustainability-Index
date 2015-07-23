@@ -144,7 +144,7 @@ public class ConsumptionPanel extends javax.swing.JPanel {
                 .addGap(15, 15, 15))
         );
 
-        naturalGasPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Natural Gas"));
+        naturalGasPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Fuels (Natural Gas/ Coal/ Saw Dust/ Others)"));
 
         gasTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

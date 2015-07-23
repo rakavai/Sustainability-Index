@@ -41,7 +41,7 @@ public class PwcUIHandler {
     }   
     
     private void setLabel(){
-        UIControllRoom.setTextTopLabel("Pair Wise Conmparison");
+        UIControllRoom.setTextTopLabel(" Pair Wise Conmparison");
     }
     
     private void formThePair(){        

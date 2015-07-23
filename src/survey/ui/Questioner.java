@@ -68,7 +68,7 @@ public class Questioner extends javax.swing.JFrame {
         topLabel.setBackground(new java.awt.Color(51, 153, 180));
         topLabel.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
         topLabel.setForeground(new java.awt.Color(254, 254, 254));
-        topLabel.setText("Pariwise Comparison between sections");
+        topLabel.setText(" Pairwise Comparison between sections");
         topLabel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         topLabel.setOpaque(true);
 

@@ -52,8 +52,8 @@ public class PairWiseComparisonWHSContorller {
         currentLeftObject  = (SectionObject) currentPair.getLeft();
         currentRightObject = (SectionObject) currentPair.getRight();
         
-        mainPanel.optionLeft.setText(currentLeftObject.sectionName);
-        mainPanel.optionRight.setText(currentRightObject.sectionName);
+        mainPanel.optionLeft.setText("<html>"+currentLeftObject.sectionName+"</html>");
+        mainPanel.optionRight.setText("<html>"+ currentRightObject.sectionName+"</html>" );
         current++;
     }
     

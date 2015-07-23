@@ -25,101 +25,161 @@ public class SectionWHS {
         whs.sectionTitle = "Workers Health & Safety Questionnaire";
         whs.subSection = new ArrayList<>();
 
-        String[][] cognitiveStr = {
+        String[][] physicalPosture = {
             {
-                "Is your company strict about not putting too much work pressure on you?",
-                "Do not make compulsory extra hour works for the worker"
+                "Do the employees frequently complain about work-related pain or discomfort (neck, back, upper extremity, etc.) due to physical exertion?",
+                "Ensure a policy or mechanism that prevents employees to do physically strenuous job"
             },
             {
-                "Have you undertaken a stress risk management in the workplace?",
-                "Launch a stress risk management program in the workplace"
+                "Are the workstations/work-activities designed to prevent use of sustained awkward postures?",
+                "Design a workstation to prevent awkward postures"
             },
             {
-                "Does your company discourage work at home after the main job hours?",
-                ""
+                "Are the workstations/work-activities designed to prevent use of forceful arm exertions?",
+                "Design the work to eliminate the use of forceful arm exertions"
             },
             {
-                "Is it easy to take time off during your work to take care of personal or family matters?",
-                "Make sure work life balance is tolerable"
+                "Are the workstations/work-activities designed to prevent use of repetitive or high frequency exertions?",
+                "Design workstation to prevent use of repetitive or high frequency exertions"
             },
             {
-                "Are you allowed to change your starting and quitting times on a daily basis?",
-                "Allow your workers to have flexible timing"
+                "Are the employees prevented from using same equipment/workstation continuously for >= 4 hours per day?",
+                "Breakdown work related activities to prevent using same workstation for less than 4 hours per day continuously"
+            },
+            {
+                "Do you have policy that prevents workers from lifting, pushing, pulling heavy loads?",
+                "Design a workstation to prevent workers from lifting, pushing, pulling heavy loads"
+            },
+            {
+                "Do you provide annual or bi-annual safety or ergonomics training?",
+                "Provide annual or bi annual safety or ergonomics training to all of the employees"
+            },
+            {
+                "Do you have policy that ensures job rotation?",
+                "Maintain a policy that ensures job rotation"
             }
         };
 
-        whs.subSection.add(new SectionObject("Cognitive", QuestionsObject.asList(cognitiveStr)));
+        whs.subSection.add(new SectionObject("Physical Posture", QuestionsObject.asList(physicalPosture)));
 
-        String[][] postureStr = {
+        String[][] psychosocialAndPsychophysicalExposure = {
             {
-                " In the past 12 months, have you not feel any back pain for a week or more?",
-                ""
+                "Do the employees frequently complain about work-related stress due to the social work environment (social support, relationship with supervisor, colleague, etc.)? ",
+                "Create a good social work environment in the plant"
             },
             {
-                "Does your job regularly prevents you to perform repetitive or forceful hand movements or awkward postures?",
-                "Try to prevent repetitive posture or forceful hand movements or awkward positioning"
+                "Do you have policy that encourages/trains the employees on maintaining healthy work-life balance?",
+                "Ensure a policy that encourages the employees on maintaining healthy work-life balance"
             },
             {
-                "Are all the employees restricted to use same equipment continuously for maximum 4 hours per day?",
-                "Provide breaks regularly during works"
+                "Do you provide annual or bi-annual stress management training?",
+                "Provide annual or bi-annual stress management training"
+            },
+            {
+                "Is it easy for the employees to take time off during work to take care of personal or family matters?",
+                "Ensure a policy that helps employees to take time off during work for family reasons"
+            },
+            {
+                "Do you have trade union that represent/protect workers interest?",
+                "Facilitate trade unions for the employees"
+            },
+            {
+                "Do you have policy that encourages employee participation in day-to-day decision making?",
+                "Encourage employee participation in day-to-day decision making"
+            },
+            {
+                "Do you have policy/mechanism (suggestion box, complain box, employee counselling, etc.) that promotes healthy work environment?",
+                "Put suggestion box, complain box, and employee counselling that promote healthy work environment"
+            },
+            {
+                "Do you promote regular outings/games/fun activities/team building exercises among employees?",
+                "Promote regular outings, games, team building exercises and fun activities among employees"
             }
         };
 
-        whs.subSection.add(new SectionObject("Posture", QuestionsObject.asList(postureStr)));
+        whs.subSection.add(new SectionObject("Psychosocial and psychophysical exposure", QuestionsObject.asList(psychosocialAndPsychophysicalExposure)));
 
-        String[][] forceStr = {
+        String[][] environmentalExposure = {
             {
-                "Does your job prevent you to work very fast?",
-                "Design work in a way that requires moderate pace"
+                "Do the employees frequently complain about work-related discomfort or stress due to the physical work environment (noise, illumination, climate, etc.)?",
+                "Ensure a policy to eliminate work related discomfort due to physical work environment (noise, illumination, climate, etc.)"
             },
             {
-                "Are there any people who must carry heavy goods or awkward items such as stationary or stock deliveries, drink containers or work equipment with proper measurement?",
-                "Form a strong policy so that no one has to carry heavy goods without proper measurement"
+                "Do you routinely conduct survey to monitor employees’ noise exposure?",
+                "Conduct a routine survey to monitor noise exposure"
             },
             {
-                "Does your job prevent you to do repeated lifting, pushing, pulling or bending?",
-                "Design works in such a manner so that there is no repeated lifting, pushing or bending"
+                "Do you routinely conduct survey to monitor employees’ vibration exposure?",
+                "Conduct a routine survey to monitor vibration exposure"
             },
             {
-                "In the past 12 months, have you been injured with your job?",
-                ""
+                "Do you routinely conduct survey to ensure that the workstations/work-activities do not have excessive illumination/glare issues?",
+                "Conduct survey to ensure workstations are sufficiently illuminated"
+            },
+            {
+                "Do you provide sufficient sizes/options for all the necessary personal protective equipment (PPE)?",
+                "Provide sufficient options for personal protective equipments"
+            },
+            {
+                "Do you have policies to prevent slipping/tripping hazards?",
+                "Maintain a policy to prevent slipping hazards"
+            },
+            {
+                "Do you have after work housekeeping policies to ensure that the workstations are maintained neat and clean?",
+                "Ensure a policy that encourages neat and clean workstations"
+            },
+            {
+                "Are the mechanical ventilation systems in good condition and regularly maintained so that employees do not get exposed to dust, fumes, and gases?",
+                "Provide good mechanical ventilation to prevent exposure from dust, fumes, and gases"
+            },
+            {
+                "Do you have policy that prevents outdoor work under severe weather condition without proper protection?",
+                "Ensure a policy that prevents outdoor work without proper protection"
             }
         };
 
-        whs.subSection.add(new SectionObject("Force", QuestionsObject.asList(forceStr)));
+        whs.subSection.add(new SectionObject("Environmental exposure", QuestionsObject.asList(environmentalExposure)));
 
-        String[][] environmentStr = {
+        String[][] generalPolicy = {
             {
-                "During the past 30 days, did you not take leave for your poor physical or mental health?",
-                ""
+                "Do you maintain emergency response plan?",
+                "Maintain an emergency response plan"
             },
             {
-                "Are you satisfied that all the dangerous parts of work equipment are adequately guarded?",
-                "Properly guard all the dangerous parts of work equipment"
+                "Do you have a procedure for recording work-related incidents and near misses?",
+                "Maintain a procedure for recording work related incidents and near misses"
             },
             {
-                "Do you have proper protection for noisy environment?",
-                "Use proper protection for noisy environment"
+                "Do you have policy that enforces routine review of all the reported incidents and near misses?",
+                "Enforce routine review of all the reported incidents and near misses"
             },
             {
-                "Is the safety or workers a high priority with management?",
-                ""
+                "Do you routinely provide training on health and safety regulations relevant to your plant?",
+                "Provide training on health and safety regulations relevant to your plant"
             },
             {
-                "Do you have any strong trade unions to protect your interest?",
-                "Facilitate strong trade unions for your employees’ interest"
+                "Do you have policy that enforces regular maintenance check-up?",
+                "Enforce regular maintenance check-up"
             },
             {
-                "Is there any employee health and safety training?",
-                "Provide adequate health and safety training to the employees"
+                "Do you have policy that enforces adequate machine guarding?",
+                "Enforce adequate machine guarding"
             },
             {
-                "Is there any regular maintenance check-up system in your industry?",
-                "Practice regular maintenance check-up system for all equipment in the industry"
+                "Do you have competent persons trained to ensure the safe evacuation of all persons from buildings in the event of serious and unexpected events (fire, cyclone, tornado, etc.)?",
+                "Designate a person who will ensure safe evacuation in the event of serious and unexpected events (fire, cyclone, tornado, etc."
+            },
+            {
+                "Do you have policy that enforces adequate machine guarding?",
+                "Enforce adequate machine guarding"
+            },
+            {
+                "Do you have policy in place to treat workers in an event of emergency/accident?",
+                "Ensure a place to treat the workers in an event of emergency/accident"
             }
         };
 
-        whs.subSection.add(new SectionObject("Workstation Environment", QuestionsObject.asList(environmentStr)));
+        whs.subSection.add(new SectionObject("General Policy", QuestionsObject.asList(generalPolicy)));
 
     }
 }

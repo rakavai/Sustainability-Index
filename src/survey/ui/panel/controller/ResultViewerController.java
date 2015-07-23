@@ -73,7 +73,7 @@ public class ResultViewerController {
         labelString+="</ul>";
         labelString+="<strong>";
         labelString+="Sustainability Index: ";
-        labelString+=CustomFunction.toTwoDecimal(ResultDataSet.sIndex)+"%";
+        labelString+=CustomFunction.toTwoDecimal(ResultDataSet.sIndex);
         labelString+="</strong>";
         labelString+="<br>";
         labelString+="<br>";
@@ -91,7 +91,7 @@ public class ResultViewerController {
         labelString += "Recorded Responses: " + questionStatString(ResultDataSet.wasteQStat) + "<br>";
 
         labelString += "<br>Waste Index: ";
-        labelString += CustomFunction.toTwoDecimal(ResultDataSet.wasteIndex) + "%";
+        labelString += CustomFunction.toTwoDecimal(ResultDataSet.wasteIndex);
         labelString += "<hr><br>";
         return labelString;
     }
@@ -119,7 +119,7 @@ public class ResultViewerController {
         
         
         labelString += "Workers’ Health & Safety Index: ";
-        labelString += CustomFunction.toTwoDecimal(PopulateResultFunction.treatWhsSection()) + "%";
+        labelString += CustomFunction.toTwoDecimal(PopulateResultFunction.treatWhsSection());
        
         return labelString;
     }
@@ -151,7 +151,7 @@ public class ResultViewerController {
             labelString+="</ul>";
         }
         labelString += "<br>Energy Efficiency Index: ";
-        labelString += CustomFunction.toTwoDecimal(ResultDataSet.energyIndex) + "%";
+        labelString += CustomFunction.toTwoDecimal(ResultDataSet.energyIndex);
         labelString += "<hr><br>";
         return labelString;
     }

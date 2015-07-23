@@ -2,28 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/ui/panel/controller/QuestionViewerController.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/data/SectionVariable.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/ui/panel/controller/SuggestionController.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/ui/panel/controller/PwcUIHandler.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/data/result/QuestionStat.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/data/sectionstatic/SectionWaste.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/data/result/CarbonFootPrint.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/ui/panel/controller/ResultViewerController.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/data/QuestionsObject.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/data/result/ResultDataHandler.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/data/sectionstatic/SectionWHS.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/ui/panel/PairwiseComparisionSection.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/ui/FirstStep.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/ui/Questioner.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/data/SectionObject.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/data/result/ResultDataSet.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/ui/panel/QuestionViewer.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/ui/SurveySI.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/ui/panel/CarbonFootPrintPanel.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/data/result/PopulateResultFunction.java</file>
-            <file>file:/media/rakib/Software%20and%20backup/Document/works/Survey%20SI/src/survey/ui/panel/ResultViewer.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
